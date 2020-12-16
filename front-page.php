@@ -1,15 +1,33 @@
 <?php get_header();?>
 
 
-<div class="container pt-5 pb-5">
 
-    <h1><?php the_title()?></h1>
+    <div class="title fixed-top">
+        <div class="container">
+            <h1><?php the_title()?></h1>
+        </div> <!-- end container -->
+    </div> <!-- end title -->
 
-    <?php if(have_posts()) : while(have_posts()) : the_post();?>
 
-    <?php the_content();?>
 
-    <?php endwhile; endif;?>
-</div> <!-- end container -->
+
+    <div class="content"> 
+        <div class="container">
+            <div class="section">
+                <h4>Begin met zoeken</h4>
+                <form action="">
+                    <input class="inputTxt" type="text">
+                    <input class="inputTxt" type="text">
+                    <input class="inputBtn" type="button" value="Zoeken">
+                </form>
+            </div>
+
+        </div> <!-- end container -->
+    
+    </div> <!-- end content -->
+
+
+    
+
 
 <?php get_footer();?>
