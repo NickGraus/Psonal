@@ -14,13 +14,13 @@
     <div class="content"> 
         <div class="container">
             <div class="section">
-
+                <h4>Begin met zoeken</h4>
+                <form action="">
+                    <input class="inputTxt" type="text">
+                    <input class="inputTxt" type="text">
+                    <input class="inputBtn" type="button" value="Zoeken">
+                </form>
             </div>
-        <?php if(have_posts()) : while(have_posts()) : the_post();?>
-
-        <?php the_content();?>
-
-        <?php endwhile; endif;?>
 
         </div> <!-- end container -->
     
