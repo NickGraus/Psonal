@@ -10,7 +10,7 @@
 
 
 
-<header class="sticky-top">
+<header class="fixed-bottom">
     <div class="container">
         <?php wp_nav_menu(
             array (
