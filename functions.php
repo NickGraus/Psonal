@@ -21,3 +21,9 @@ function loadjs()
 add_action('wp_enqueue_scripts', 'loadjs');
 
 add_theme_support('menus'); //Adds menu section to the backend of Wordpress
+
+register_nav_menus(
+    array(
+         'navigation-menu' => __("Navigation menu", 'theme')
+    )
+    );
