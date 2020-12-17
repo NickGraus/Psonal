@@ -3,11 +3,23 @@ Theme Name: Psonal Theme
 Author: Nick Graus
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
+/* @font-face {
+    font-family: 'AcuminPro-Regular';
+    src: url('/css/fonts/AcuminPro-Regular.woff');
+}
+
+@font-face {
+    font-family: 'Rubik-Bold';
+    src: url('/css/fonts/Rubik-Bold.woff');
+} */
 
 body {
     width: 100%;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'AcuminPro-Regular';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik-Bold';
 }
 
 header {
@@ -18,6 +30,7 @@ header {
 
 ul {
     padding-inline-start: 0;
+    list-style: none;
 }
 
 .menu {
@@ -47,7 +60,27 @@ ul {
 
 .content {
     background: white;
-    height: 1000px;
+}
+
+.section {
+    margin-bottom: 60px;
+    display:grid;
+}
+
+.negative {
+    background-image: linear-gradient(to right, #ff7211, #fcbc15);
+}
+
+.section.negative {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.section.negative h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
 }
 
 .inputTxt {
@@ -56,9 +89,10 @@ ul {
     border: 2px solid #ff7211;
     border-radius: 25px;
     margin-bottom: 5px;
+    overflow: hidden;
 }
 
-.inputBtn {
+.btn {
     float: right;
     background-image: linear-gradient(to right, #ff7211, #fcbc15);
     border-radius: 25px;
@@ -66,4 +100,50 @@ ul {
     height: 40px;
     border:none;
     color: #ffffff;
+    -webkit-appearance: none;
+    font-family: 'Rubik-Regular';
+
+}
+
+.btn.negative {
+    float: left;
+    background-color: #ffffff;
+    background-image: none;
+    border-radius: 25px;
+    width: calc(50% - 10px); /* 10px from class: .inputBtn.negative:nth-child(odd) */
+    height: 40px;
+    border:none;
+    color: #000000;
+    -webkit-appearance: none;
+    margin-bottom: 10px;
+    font-family: 'Rubik-Regular';
+
+}
+
+.btn.negative:nth-child(odd) {
+margin-right: 10px;
+}
+
+
+
+
+
+.card {
+    border-radius: 20px;
+}
+
+.card h5 {
+    background-image: linear-gradient(to right, #ff7211, #fcbc15);
+    color: #ffffff;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.post-meta{
+    list-style: none;
+}
+
+.info {
+    list-style: none;
 }
