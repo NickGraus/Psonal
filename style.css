@@ -3,7 +3,12 @@ Theme Name: Psonal Theme
 Author: Nick Graus
 */
 
-body {}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
+
+body {
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+}
 
 header {
     background-image: linear-gradient(to right, #ff7211, #fcbc15);
