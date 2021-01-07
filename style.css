@@ -22,6 +22,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Rubik-Bold';
 }
 
+
+
 header {
     background-image: linear-gradient(to right, #ff7211, #fcbc15);
     width: 100%;
@@ -49,8 +51,9 @@ ul {
     color: white;
 }
 
-.title {
+.titlebar {
     height: 75px;
+    width: 100%;
     padding-top: 20px;
     color: white;
     position: sticky;
@@ -90,6 +93,7 @@ ul {
     border-radius: 25px;
     margin-bottom: 5px;
     overflow: hidden;
+    padding-left: 10px;
 }
 
 .btn {
@@ -135,7 +139,7 @@ margin-right: 10px;
 .card h5 {
     background-image: linear-gradient(to right, #ff7211, #fcbc15);
     color: #ffffff;
-    padding: 10px;
+    padding: 10px 20px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -146,4 +150,8 @@ margin-right: 10px;
 
 .info {
     list-style: none;
+}
+
+.spacer {
+    height: 60px;
 }

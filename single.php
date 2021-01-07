@@ -1,8 +1,8 @@
 <?php get_header();?>
 
-<div class="title fixed-top">
+<div class="titlebar fixed-top" id="titlebar">
         <div class="container">
-            <h1><?php the_title()?></h1>
+            <h1 id="titlename"><?php the_title()?></h1>
         </div> <!-- end container -->
     </div> <!-- end title -->
 
@@ -14,6 +14,9 @@
 
     <?php endwhile; endif;?>
 
+    <div class="spacer">
+    
+    </div>
 
 </div> <!-- end container -->
 

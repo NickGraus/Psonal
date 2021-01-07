@@ -17,9 +17,8 @@
                 <h4>Begin met zoeken</h4>
 
                 <form action="" method="post">
-                    <input class="inputTxt" type="text">
-                    <input class="inputTxt" type="text">
-                    <input class="inputTxt" type="text">
+                    <input class="inputTxt" type="text" id="function" placeholder="functie">
+                    <input class="inputTxt" type="text" id="location" placeholder="locatie of postcode">
                     <input class="btn" type="button" value="Zoeken">
                 </form>
             </div> <!-- end section -->
