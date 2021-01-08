@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<div class="title fixed-top">
+<div class="titlebar fixed-top">
         <div class="container">
             <h1><?php single_cat_title()?></h1>
         </div> <!-- end container -->
